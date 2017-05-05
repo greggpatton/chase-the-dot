@@ -12,14 +12,13 @@ module.exports = {
     ]
   },
   resolve: {
-    extensions: ['.js','.scss']
+    extensions: ['.js', '.scss']
   },
   output: {
     path: path.join(__dirname, '/dist'),
     publicPath: '/',
     filename: 'bundle.js'
   },
-  devtool: 'cheap-eval-source-map',
   devServer: {
     contentBase: './dist',
     hot: true
