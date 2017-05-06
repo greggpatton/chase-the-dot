@@ -5,7 +5,7 @@ export default class Navigation extends Component {
   // state = {}
   render () {
     return (
-      <Navbar inverse>
+      <Navbar inverse staticTop>
         <Navbar.Header>
           <Navbar.Brand>
             <a href='#'>Fresh Tomatoes Movie Trailers</a>
