@@ -1,11 +1,15 @@
 import React, { Component } from 'react'
 import Navigation from './Navigation'
+import VideoTitleContainer from './VideoTitleContainer'
 
 export default class App extends Component {
   // state = {  }
   render () {
     return (
-      <Navigation />
+      <div>
+        <Navigation />
+        <VideoTitleContainer />
+      </div>
     )
   }
 }
