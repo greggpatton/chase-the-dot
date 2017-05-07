@@ -2,7 +2,7 @@ import React from 'react'
 import { render } from 'react-dom'
 import configureStore from './store/configureStore'
 import { Provider } from 'react-redux'
-import { HashRouter, Route } from 'react-router-dom'
+import { BrowserRouter, Route } from 'react-router-dom'
 import { loadMovies } from './actions/movieInfoActions'
 import App from './components/App'
 
@@ -17,9 +17,9 @@ store.dispatch(loadMovies())
 
 render(
   <Provider store={store}>
-    <HashRouter>
+    <BrowserRouter>
       <Route path='/' component={App} />
-    </HashRouter>
+    </BrowserRouter>
   </Provider>,
   document.getElementById('root')
 )
