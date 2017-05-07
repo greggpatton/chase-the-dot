@@ -34,7 +34,6 @@ export default class VideoTitle extends Component {
     }
 
     const modalStyle = {
-      'modal-content-bg': 0,
       height: 430
     }
     const posterImageUrl = this.props.poster_image_url
