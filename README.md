@@ -28,6 +28,8 @@ Once the server is running, you can visit `http://localhost:8080/`
 
 A few more details...
 ---
+The [simple-movie-api](https://github.com/greggpatton/simple-movie-api) is used to retrieve movie data.
+
 This application is _not_ a [Universal JavaScript](https://medium.com/@mjackson/universal-javascript-4761051b7ae9) application. It's a simple [Express](https://expressjs.com/) webserver that serves up ['transpiled'](https://babeljs.io/) JavaScript. If you're interested in Universal React applications you can check out this project, [React Redux Universal Hot Example](https://github.com/erikras/react-redux-universal-hot-example).
 
 Package highlights
