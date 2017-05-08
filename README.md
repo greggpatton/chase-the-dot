@@ -30,9 +30,9 @@ A few more details...
 ---
 This application is _not_ a [Universal JavaScript](https://medium.com/@mjackson/universal-javascript-4761051b7ae9) application. It's a simple [Express](https://expressjs.com/) webserver that serves up ['transpiled'](https://babeljs.io/) JavaScript. If you're interested in Universal React applications you can check out this project, [React Redux Universal Hot Example](https://github.com/erikras/react-redux-universal-hot-example).
 
-Package higglights
+Package highlights
 ---
-I referenced many projects, packages and tutorials while completing this project.
+I referenced many projects, packages and tutorials in completing this project.
 
 Here are a few of them...
 * [React + Node Starter](https://github.com/alanbsmith/react-node-example)
