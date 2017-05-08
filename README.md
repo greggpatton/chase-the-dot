@@ -1,91 +1,43 @@
-# React + Node Starter
-_for [Heroku](https://www.heroku.com/) deployment_
+# Movie Trailer Website (React)
 
-### OVERIVEW
-This is a simple starter to get you up and running for React projects. This is intended to provide:
+I'm enrolled in UDACITY's [Full Stack Web Developer Nanodegree](https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004). Among other things, I'm also interested in learning [React](https://reactjs.net/) and [Redux](http://redux.js.org/).
 
-* a lightweight webpack config (for development and production)
-* some helpful tooling for development workflow
-* a similar setup to what you'll see in the wild
-* Heroku-ready deployment setup
+After I finished the first the project of the Nanodegree, Movie Trailer Website, I decided to take a shot at implementing it with [React](https://reactjs.net/) and deploying it to [Heroku](https://www.heroku.com/) as a [NodeJS](https://nodejs.org) application.
 
-### UP & RUNNING
-* Install dependencies
-`$ npm install` or `$ yarn`
+Here's the result. [Movie Trailer Website React](https://movie-trailer-website-react.herokuapp.com/) `(If it's a little slow starting up just give it a few seconds, the app might need to wake up if it hasn't been run in a while.)`
 
-* Fire up a development server:
+If you want to create your own React application and run it on Heroku you use this excellent project I found:
+
+### [React + Node Starter](https://github.com/alanbsmith/react-node-example)
+
+as a starting place.
+
+If you want to try out this project, keep reading.
+
+How to run
+----------
+* Clone the repository
+
+* Install the dependencies
+* `$ npm install`
+
+* Run the development server:
 * `$ npm run dev`
 
 Once the server is running, you can visit `http://localhost:8080/`
 
-### Linting
-_This assumes you have eslint and eslint-watch installed. If you don't, run the following:_
-```
-$ npm i -g eslint eslint-watch
-```
-or if you need permissions:
-```
-$ sudo npm i -g eslint eslint-watch
-```
+A few more details...
+---
+This application is _not_ a [Universal JavaScript](https://medium.com/@mjackson/universal-javascript-4761051b7ae9) application. It's a simple [Express](https://expressjs.com/) webserver that serves up ['transpiled'](https://babeljs.io/) JavaScript. If you're interested in Universal React applications you can check out this project, [React Redux Universal Hot Example](https://github.com/erikras/react-redux-universal-hot-example).
 
-To run the linter once:
-```
-$ npm run lint
-```
+Package higglights
+---
+I referenced many projects, packages and tutorials while completing this project.
 
-To run the watch task:
-```
-$ npm run lint:watch
-```
-
-### Testing
-
-To run the tests:
-```
-$ npm test
-```
-
-### Production Build
-
-To build your production assets and run the server:
-```
-$ npm start
-```
-
-### CHANGELOG
-**v1.0.0**
-This app has been updated to use React v15.5 and Webpack 2.3! 🎉
-
-Major Changes:
-* Updates React and ReactDOM to v15.5
-* Updates Webpack to v2.3
-* Enables hot-reloading for local development
-* Adds initial test suite with Enzyme, Expect, and Mocha
-
-Minor Changes:
-* Updates all other dependencies to latest
-* Updates eslint rules
-* Updates npm scripts
-* Refactors server.js
-* Updates README
-
-**v.0.2.0**
-This app has been updated to use React v15 and Babel v6! I have also updated the file structure to reflect naming conventions you'll most likely see in other applications. If you'd like to go back to v.0.0.1 (which should've been named 0.1.0), you can find go back to [this commit](https://github.com/alanbsmith/react-node-example/commit/dd6d745c4b7066fd12104d5005b805afaf469d91).
-
-### DEPLOYING TO HEROKU
-This app is set up for deployment to Heroku!
-
-_This assumes you have already have a Heroku account and have the [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) installed_
-```
-$ heroku login
-$ heroku create -a name-of-your-app
-$ git push heroku master
-$ heroku open
-```
-
-Heroku will follow the `build` command in your `package.json` and compile assets with `webpack.prod.config.js`. It runs the Express web server in `server.js`.
-
-If you're unfamiliar with Heroku deployment (or just need a refresher), they have a really great walkthrough [here](https://devcenter.heroku.com/articles/getting-started-with-nodejs#introduction).
-
-### REDUX STARTER
-If you're looking for a similar, minimalistic Redux starter, I would recommend Marc Garreau's [here](https://github.com/marcgarreau/redux-starter)
+Here are a few of them...
+* [React + Node Starter](https://github.com/alanbsmith/react-node-example)
+* [React](https://reactjs.net/)
+* [Redux](http://redux.js.org/)
+* [React-Bootstrap](https://github.com/react-bootstrap/react-bootstrap)
+* [React + Redux Tutorial Part III: Async Redux](http://www.thegreatcodeadventure.com/react-redux-tutorial-part-iii-async-redux/)
+* [React-Motion](https://github.com/chenglou/react-motion)
