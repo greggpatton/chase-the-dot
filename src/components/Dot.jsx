@@ -4,14 +4,14 @@ import PropTypes from 'prop-types'
 export default class Dot extends Component {
   render () {
     var style = {
-      width: this.props.size + '%',
-      height: '0%',
-      'paddingBottom': this.props.size + '%',
+      width: this.props.size + 'px',
+      height: this.props.size + 'px',
+      // 'paddingBottom': this.props.size + 'px',
       'borderRadius': '50%',
-      top: this.calcTop() + '%',
-      // top: this.props.cy + '%',
-      left: this.calcLeft() + '%',
-      // left: this.props.cx + '%',
+      top: this.calcTop() + 'px',
+      // top: this.props.cy + 'px',
+      left: this.calcLeft() + 'px',
+      // left: this.props.cx + 'px',
       position: 'absolute',
       backgroundColor: this.props.color
     }
@@ -21,10 +21,12 @@ export default class Dot extends Component {
   }
 
   calcTop () {
-    return this.props.cy * ((100 - this.props.size) / 100)
+    return this.props.cy - (this.props.size / 2)
+    // return this.props.cy * ((100 - this.props.size) / 100)
   }
   calcLeft () {
-    return this.props.cx * ((100 - this.props.size) / 100)
+    return this.props.cx - (this.props.size / 2)
+    // return this.props.cx * ((100 - this.props.size) / 100)
   }
 }
 

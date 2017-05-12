@@ -50,23 +50,31 @@ export default class Viewport extends Component {
     // }
     let style = {
       // position: 'relative',
+      top: 0,
+      left: 0,
       position: 'absolute',
+      overflow: 'hidden',
       backgroundColor: 'grey',
-      height: '100%'
+      // height: '100vmin',
+      // width: '100vmin'
+      height: '100%',
+      width: '100%'
     }
 
     if (window.innerWidth < window.innerHeight) {
-      style.width = '100%'
-      style.paddingBottom = '100%'
+      // style.width = '100vw'
+      // style.width = '100%'
+      // style.paddingBottom = '100%'
     } else {
-      let v = (window.innerHeight / window.innerWidth * 100)
-      style.width = v + '%'
-      style.paddingBottom = v + '%'
+      // style.height = '100vh'
+      // let v = (window.innerHeight / window.innerWidth * 100)
+      // style.width = v + '%'
+      // style.paddingBottom = v + '%'
     }
       // display: 'flex'
     return (
       <Grid style={style}>
-        <Dot cx={100} cy={100} size={10} color={'red'} />
+        <Dot cx={window.innerWidth} cy={window.innerHeight} size={30} color={'red'} />
       </Grid>
     )
   }
